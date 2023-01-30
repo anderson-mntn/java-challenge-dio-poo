@@ -65,12 +65,11 @@ public class Main {
         System.out.println("João XP: " + devJoao.calcularTotalXp());
         devJoao.progredir();
         devJoao.progredir();
-        devJoao.progredir();
         System.out.println("João XP: " + devJoao.calcularTotalXp());
-        devJoao.progredir();
-
-
-        
+       
+        devJoao.setNome("João da Silva");
+        System.out.println(devJoao.getNome());    
+        System.out.println("XP total de joao: " + devJoao.calcularTotalXp());    
 
 
     }

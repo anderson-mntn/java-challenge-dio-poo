@@ -18,10 +18,11 @@ public class Dev {
     }
     
     public void progredir() {
+
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
         if(conteudo.isPresent()){
-            this.conteudosConcluidos.add(conteudo.get()); //put conteudo inside of conteudoConcluidos
-            this.conteudosInscritos.remove(conteudo.get());
+            this.conteudosConcluidos.add(conteudo.get()); //coloca "conteudo" de dentro conteudos concluidos
+            this.conteudosInscritos.remove(conteudo.get()); //remove "conteudo" de dentro de conteudos inscritos
         } else {
             System.out.println("O usuário não está inscrito em nenhum bootcamp!");
         }
