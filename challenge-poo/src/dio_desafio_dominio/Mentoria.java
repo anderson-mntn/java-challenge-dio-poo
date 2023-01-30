@@ -15,13 +15,13 @@ public class Mentoria extends Conteudo {
     }
     @Override
     public String toString() {
-        return "Mentoria [titulo=" + getTitulo() +
-         ", descricao="+ getDescricao() + 
-         ", data="+ data + "]";
+        return "\nMentoria: [titulo = " + getTitulo() +
+         ", descricao = "+ getDescricao() + 
+         ", data = "+ data + "]";
     }
     @Override
     public double calcularXp() {
-        return XP_DEFAULT + 25d;
+        return XP_DEFAULT + 20d;
     }
 
     

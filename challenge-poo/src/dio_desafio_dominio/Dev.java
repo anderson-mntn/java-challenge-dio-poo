@@ -8,12 +8,13 @@ public class Dev {
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+    private Conteudo bootcamp;
 
     // Adding methods
 
     public void inscreverBootcamp(Bootcamp bootcamp){
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
-        bootcamp.getDevsIncritos().add(this);
+      bootcamp.getDevsIncritos().add(this.bootcamp);
     }
     
     public void progredir() {
@@ -92,6 +93,12 @@ public class Dev {
         } else if (!conteudosConcluidos.equals(other.conteudosConcluidos))
             return false;
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Dev [nome=" + nome + ", conteudosInscritos=" + conteudosInscritos + ", conteudosConcluidos="
+                + conteudosConcluidos + ", bootcamp=" + bootcamp + "]";
     }
     
     
