@@ -56,15 +56,22 @@ public class Main {
 
         System.out.println(devAnderson.getNome() + " " + curso2.getTitulo() + " Finalizado! Recebeu mais " + Conteudo.getXpDefault() +" (XP DEFAULT) + " + curso2.getCargaHoraria() + " (carga horária) de XP!");
         System.out.println("Anderson agora tem: " + devAnderson.calcularTotalXp() + " de XP \n");
-        System.out.println("Bootcamps concluidos: "+devAnderson.getConteudosConcluidos() + "\n");
+        System.out.println("Bootcamps concluidos: "+ devAnderson.getConteudosConcluidos() + "\n");
         System.out.println(devAnderson.getNome() +" Cursos Inscritos: " + devAnderson.getConteudosInscritos() + "\n");
         
+        Dev devJoao = new Dev();
+        devJoao.inscreverBootcamp(novoBootcamp);
+        System.out.println("Joao Bootcamps Incritos: " + devJoao.getConteudosInscritos());
+        System.out.println("João XP: " + devJoao.calcularTotalXp());
+        devJoao.progredir();
+        devJoao.progredir();
+        devJoao.progredir();
+        System.out.println("João XP: " + devJoao.calcularTotalXp());
+        devJoao.progredir();
+
+
         
 
-        //  System.out.println(devAnderson.getNome() + devAnderson.getConteudosInscritos());
-        //    System.out.println("Anderson Total de XP: "+ devAnderson.calcularTotalXp());
-        //    devAnderson.progredir();
-        //    System.out.println("Anderson Total de XP: "+ devAnderson.calcularTotalXp());
 
     }
 }
