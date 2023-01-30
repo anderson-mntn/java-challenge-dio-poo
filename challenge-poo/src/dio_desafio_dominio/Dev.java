@@ -23,7 +23,7 @@ public class Dev {
             this.conteudosConcluidos.add(conteudo.get()); //put conteudo inside of conteudoConcluidos
             this.conteudosInscritos.remove(conteudo.get());
         } else {
-            System.out.println("Você não está inscrito em nenhum conteúdo!");
+            System.out.println("O usuário não está inscrito em nenhum bootcamp!");
         }
     }
 
